@@ -59,15 +59,53 @@ div#form > h1 {
 
 input {
     border: 2px solid black;
+    border-radius: 2px;
 }
 
 a#esqueci {
+    display: block;
     text-decoration: none;
     font-weight: bolder;
     color: #5f2c82;
+    text-align: center;
+    padding: 10px;
 }
 
 input#entrada:hover {
     background-color: rgba(79, 79, 79, 0.295);
     cursor: pointer;
+}
+
+form > input[type=submit] {
+    display: block;
+    width: 100%;
+    background-color: #49a09d;
+    border: none;
+    color: white;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form > input[type=submit]:hover {
+    background-color: #39d3ce;
+}
+
+div.campo {
+    display: block;
+    background-color: #602c82;
+    height: 48px;
+    margin: 4px 0px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+div.campo > span {
+    color: white;
+    padding: 0px 6px 0px 2px;
+    /* 4px 8px 0px 4p */
+}
+
+div.campo > label {
+    display: none;
 }
