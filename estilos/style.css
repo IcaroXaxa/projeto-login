@@ -36,6 +36,7 @@ section#login {
     overflow: hidden;
 
     transition: width 0.6s, height 0.6s;
+    transition-timing-function: ease;
 }
 
 div#img {
@@ -49,4 +50,24 @@ div#img {
 div#form {
     display: block;
     padding: 14px;
+}
+
+div#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input {
+    border: 2px solid black;
+}
+
+a#esqueci {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #5f2c82;
+}
+
+input#entrada:hover {
+    background-color: rgba(79, 79, 79, 0.295);
+    cursor: pointer;
 }
