@@ -15,7 +15,7 @@ Telas grandes: mais de 1200px */
 
     section#login {
         width: 90vw;
-
+        height: 52vh;
     }
 
     section#login > div#img {
@@ -28,15 +28,20 @@ Telas grandes: mais de 1200px */
         float: right;
         width: 60%;
     }
+
+    div#form > p {
+        margin-bottom: 20px;
+    }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) {
     body {
         background-image: linear-gradient(to top,  #49a09d, #5f2c82);
     }
 
     section#login {
         width: 940px;
+        height: 310px;
     }
 
     section#login > div#img {
@@ -48,6 +53,10 @@ Telas grandes: mais de 1200px */
     section#login > div#form {
         float: left;
         width: 60%;
+    }
+
+    div#form > p {
+        margin-bottom: 20px;
     }
 }
 

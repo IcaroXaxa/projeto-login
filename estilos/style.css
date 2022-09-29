@@ -32,11 +32,11 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     transition: width 0.6s, height 0.6s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 div#img {
@@ -58,7 +58,7 @@ div#form > h1 {
 }
 
 input {
-    border: 2px solid black;
+    border: 2px solid #5f2c82;
     border-radius: 2px;
 }
 
@@ -102,10 +102,28 @@ div.campo {
 
 div.campo > span {
     color: white;
-    padding: 0px 6px 0px 2px;
+    /*padding: 6px 6px 0px 6px;*/ 
     /* 4px 8px 0px 4p */
+    font-size: 3em;
+    width: 47px;
+    height: 48px;
+    border-radius: 4px;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > input {
+    background-color: #5ccac6;
+    font-size: 0.9em;
+    border-radius: 4px;
+    height: 90%;
+    width: calc(100% - 53px);
+    padding: 2px;
+    transform: translateY(-18px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
 }
